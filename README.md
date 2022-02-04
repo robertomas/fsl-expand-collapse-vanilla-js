@@ -16,6 +16,7 @@ Add class "single" to "fsl-accordion" to open one panel at the time
     </div>
 </div>
 ```
+![image](https://user-images.githubusercontent.com/1022436/152594013-10d4c16f-73ab-41fc-bad1-39fa061cf990.png)
 
 Add class "multiple" to "fsl-accordion" to open one panel at the time
 ```python
@@ -30,3 +31,5 @@ Add class "multiple" to "fsl-accordion" to open one panel at the time
         </div>
     </div>
 </div>
+```
+![image](https://user-images.githubusercontent.com/1022436/152594154-7d005a9a-c555-4ea9-93ab-1b4bf28840f6.png)
