@@ -1,0 +1,260 @@
+<style>
+    .fsl-accordion-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 756px;
+        margin: 0 auto;
+        padding: 50px 20px;
+    }
+    .fsl-accordion-wrapper h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: center;
+        text-transform: none;
+        color: #333;
+        margin: 0 0 10px;
+        padding: 0;
+    }
+    .fsl-accordion-wrapper h2 {
+        font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+        font-size: 25px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: center;
+        text-transform: none;
+        color: #333;
+        margin-bottom: 35px;
+    }
+
+    .fsl-accordion {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .fsl-accordion .fsl-accordion-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .fsl-accordion .fsl-accordion-container .fsl-accordion-btn {
+        margin: 0;
+        position: relative;
+        padding: 14px 12px;
+        width: 100%;
+        display: block;
+        background: #fff;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        border-top: solid 1px #979797;
+        font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2;
+        letter-spacing: normal;
+        color: #333;
+    }
+    .fsl-accordion .fsl-accordion-container.active .fsl-accordion-btn {
+        background-color: #f9f8f6;
+    }
+    .fsl-accordion .fsl-accordion-container .fsl-accordion-btn span {
+        display: block;
+        position: absolute;
+        height: 14px;
+        width: 14px;
+        right: 20px;
+        top: 18px;
+    }
+    .fsl-accordion .fsl-accordion-container .fsl-accordion-btn span:after {
+        content: "";
+        width: 14px;
+        height: 2px;
+        border-radius: 2px;
+        background-color: #f1be48;
+        position: absolute;
+        top: 6px;
+    }
+    .fsl-accordion .fsl-accordion-container .fsl-accordion-btn span:before {
+        content: "";
+        width: 14px;
+        height: 2px;
+        border-radius: 2px;
+        background-color: #f1be48;
+        position: absolute;
+        top: 6px;
+        transform: rotate(90deg);
+        transition: all 0.3s ease-in-out;
+    }
+    .fsl-accordion .fsl-accordion-container .fsl-accordion-panel {
+        width: 100%;
+        transition: all 0.2s ease-in-out;
+        opacity: 0;
+        height: auto;
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 20px;
+        font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.29;
+        letter-spacing: normal;
+        color: #333;
+    }
+    .fsl-accordion .fsl-accordion-container.active .fsl-accordion-panel a {
+        color: dodgerblue;
+        text-decoration: underline;
+    }
+    .fsl-accordion .fsl-accordion-container.active .fsl-accordion-btn span::before {
+        transform: rotate(0deg);
+    }
+    .fsl-accordion .fsl-accordion-container.active .fsl-accordion-panel {
+        padding: 20px;
+        opacity: 1;
+        max-height: 500px;
+    }
+
+    @media (max-width: 767px) {
+        .fsl-accordion .fsl-accordion-container .fsl-accordion-btn {
+            padding-right: 40px;
+        }
+    }
+</style>
+<div class="fsl-accordion-wrapper">
+    <h1>Got a few questions?</h1>
+    <h2>Use class "single" to open one panel at the time</h2>
+    <div class="fsl-accordion single">
+        <div class="fsl-accordion-container">
+            <p class="fsl-accordion-btn">What weird food combinations do you really enjoy? <span></span></p>
+            <div class="fsl-accordion-panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dicta dolorem eveniet excepturi exercitationem in nobis rerum sunt ut? Blanditiis eos facere, iure minima pariatur quae quidem quisquam temporibus. Laboriosam.</p>
+            </div>
+        </div>
+        <div class="fsl-accordion-container">
+            <p class="fsl-accordion-btn">What social stigma does society need to get over? <span></span></p>
+            <div class="fsl-accordion-panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi debitis delectus, dicta dolorem doloribus et facere inventore laborum magni, molestias numquam officia praesentium quod, suscipit tempora vitae voluptatibus? Accusantium, quisquam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam amet aut, doloremque eum facere hic illum itaque natus odio quam quis ratione sequi? A asperiores natus pariatur possimus unde!</p>
+            </div>
+        </div>
+        <div class="fsl-accordion-container">
+            <p class="fsl-accordion-btn">What food have you never eaten but would really like to try? <span></span></p>
+            <div class="fsl-accordion-panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam architecto beatae blanditiis consequuntur corporis cum, ea impedit incidunt laboriosam modi nemo numquam officiis soluta temporibus ut vel, voluptate voluptatem.</p>
+            </div>
+        </div>
+        <div class="fsl-accordion-container">
+            <p class="fsl-accordion-btn">What’s something you really resent paying for? <span></span></p>
+            <div class="fsl-accordion-panel">
+                <p>No!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ex ipsa officiis perferendis praesentium sequi suscipit, vitae. Aliquid aut cumque deserunt eaque nesciunt optio, quod rerum. Eius neque qui rem!</p>
+            </div>
+        </div>
+        <div class="fsl-accordion-container">
+            <p class="fsl-accordion-btn">What would a world populated by clones of you be like? <span></span></p>
+            <div class="fsl-accordion-panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consectetur debitis dolore ex facilis fuga laudantium maxime minima necessitatibus nobis odit, optio quibusdam quis quisquam quod quos reiciendis voluptate voluptatibus?</p>
+            </div>
+        </div>
+        <div class="fsl-accordion-container">
+            <p class="fsl-accordion-btn">Do you think that aliens exist? <span></span></p>
+            <div class="fsl-accordion-panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, architecto atque eaque eius et eveniet expedita illo iste, nesciunt nulla possimus provident quas qui quod, recusandae rem repudiandae suscipit tempora?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, corporis debitis deserunt enim eveniet illo quidem saepe sit. Aliquid atque error ipsum itaque temporibus. At dolorem doloremque id repudiandae totam!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cumque doloremque dolores, ea eius
+                    exercitationem harum minima molestiae nemo nihil, pariatur perspiciatis, placeat quae quidem velit?
+                    Facilis fugiat harum id!</p>
+            </div>
+        </div>
+    </div>
+    <h2>Use class "multiple" to open multiple panels at the time</h2>
+    <div class="fsl-accordion multiple">
+        <div class="fsl-accordion-container">
+            <p class="fsl-accordion-btn">What are you currently worried about? <span></span></p>
+            <div class="fsl-accordion-panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cumque fugit tempore. Ad, alias
+                    aliquam, assumenda facilis fuga harum illo incidunt itaque nihil non odit rerum, sequi similique vel
+                    veritatis?</p>
+                <p>Accusantium adipisci aliquid amet animi commodi cumque deleniti dignissimos laboriosam
+                    necessitatibus, nemo, nihil non nostrum numquam officia omnis quaerat qui reiciendis, saepe
+                    similique sit soluta sunt temporibus vero voluptate voluptatum.</p>
+            </div>
+        </div>
+        <div class="fsl-accordion-container">
+            <p class="fsl-accordion-btn">Where are some unusual places you’ve been? <span></span></p>
+            <div class="fsl-accordion-panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid, at atque culpa cupiditate delectus exercitationem explicabo illo in ipsum iure molestias mollitia omnis quibusdam reprehenderit similique suscipit veniam. Quidem!</p>
+            </div>
+        </div>
+        <div class="fsl-accordion-container">
+            <p class="fsl-accordion-btn">Where do you get your news? <span></span></p>
+            <div class="fsl-accordion-panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur atque beatae consequatur cupiditate, dignissimos distinctio ex illum incidunt minus nostrum quaerat quibusdam reprehenderit repudiandae similique totam voluptate voluptatibus. Hic.</p>
+                <p>Lorem ipsum dolor sit amet,erat quibusdam reprehenderit repudiandae similique totam voluptate voluptatibus. Hic.</p>
+                <p>Lorem ipsum dolor sit amet,erainus nostrum quaeratudiandae similique totam voluptate voluptatibus. Hitrum quaerat quibusdam reprehenderit repuc.</p>
+            </div>
+        </div>
+        <div class="fsl-accordion-container">
+            <p class="fsl-accordion-btn">What are some red flags to watch out for in daily life? <span></span></p>
+            <div class="fsl-accordion-panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam animi cum doloribus et ex
+                    harum nam officiis recusandae reprehenderit. At quasi quidem, reprehenderit saepe velit veniam
+                    veritatis. Iusto, laborum!</p>
+                <p>Commodi consequuntur corporis cumque et exercitationem expedita ipsa ipsam ipsum, iure minus nam non
+                    officia officiis optio perspiciatis praesentium quae quam quasi quidem reiciendis repellat tempore
+                    temporibus ut voluptatibus voluptatum?</p>
+                <p>Ab adipisci commodi, deleniti dolor, doloribus, eaque eius et ex exercitationem explicabo impedit
+                    iusto laborum magni maiores nisi non obcaecati qui quia quidem repellendus reprehenderit sint sunt
+                    ullam veritatis voluptatibus.</p>
+            </div>
+        </div>
+        <div class="fsl-accordion-container">
+            <p class="fsl-accordion-btn">What movie can you watch over and over without ever getting tired of? <span></span></p>
+            <div class="fsl-accordion-panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi atque culpa dicta dignissimos, dolorem earum enim eos est expedita illo iusto natus necessitatibus, numquam praesentium repellat similique sunt veritatis!</p>
+            </div>
+        </div>
+        <div class="fsl-accordion-container">
+            <p class="fsl-accordion-btn">If you could switch two movie characters, what switch would lead to the most inappropriate movies? <span></span></p>
+            <div class="fsl-accordion-panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque et fuga hic perspiciatis, placeat quaerat voluptate voluptatem? Ab asperiores, blanditiis cupiditate eos fugiat impedit laboriosam maxime nesciunt quis quos voluptatibus.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function initAcc(elem, option){
+        document.addEventListener('click', function (e) {
+            if (!e.target.matches(elem+' .fsl-accordion-btn')) {}
+            else{
+                if(!e.target.parentElement.classList.contains('active')){
+                    if(option===true){
+                        var elementList = document.querySelectorAll(elem+' .fsl-accordion-container');
+                        Array.prototype.forEach.call(elementList, function (e) {
+                            e.classList.remove('active');
+                        });
+                    }
+                    e.target.parentElement.classList.add('active');
+                }else{
+                    e.target.parentElement.classList.remove('active');
+                }
+            }
+        });
+    }
+    // to open 1 at the time
+    initAcc('.fsl-accordion.single', true);
+    // to open multiple element  at the same time add v2 class to accordion
+    initAcc('.fsl-accordion.multiple', false);
+</script>
